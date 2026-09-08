@@ -144,7 +144,11 @@ The included diagnostics module can help identify missing or incorrectly configu
 ```bash
 # Install the required packages in Termux
 pkg update
-pkg install python ffmpeg
+pkg install python ffmpeg git
+
+# Clone the public repository
+git clone https://github.com/kimanojoshave-cpu/Gim.git
+cd Gim
 
 # Install Python dependencies
 pip install -r requirements.txt
@@ -154,6 +158,40 @@ python main.py
 ```
 
 > 💡 The exact installation requirements can change with the project version. Check `requirements.txt` before installation.
+
+---
+
+# 📦 DOWNLOAD
+
+### 🟦 Option 1 — Download ZIP
+
+The easiest way for most users:
+
+**GitHub → Code → Download ZIP**
+
+1. Open the repository.
+2. Press **Code**.
+3. Select **Download ZIP**.
+4. Extract the ZIP on your device.
+5. Open the project folder in Termux.
+6. Follow the installation steps above.
+
+### 🟦 Option 2 — Clone with Git
+
+```bash
+git clone https://github.com/kimanojoshave-cpu/Gim.git
+cd Gim
+pip install -r requirements.txt
+python main.py
+```
+
+### 📘 Full Download Guide
+
+For a dedicated installation and download guide, see:
+
+👉 [`DOWNLOAD.md`](DOWNLOAD.md)
+
+> ℹ️ The repository is public. Anyone can download the source using **Download ZIP** or **git clone**.
 
 ---
 
@@ -193,12 +231,6 @@ Documentation      → docs/
 ```
 
 The goal is simple: **one responsibility per module**. This makes the project easier to debug, test, improve and expand without turning `main.py` into an unmaintainable monolith.
-
----
-
-# 📦 DOWNLOAD
-
-Once this repository is made public, GitHub's **Code → Download ZIP** can be used to download the source directly.
 
 ---
 
